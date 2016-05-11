@@ -68,8 +68,8 @@ var Slider = React.createClass({
 
   reset(values) {
     this.setState({
-      positionOne: values[0],
-      positionTwo: values[1]
+      valueOne: values[0],
+      valueTwo: values[1]
     });
   },
 
