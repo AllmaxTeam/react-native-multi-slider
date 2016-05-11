@@ -66,13 +66,6 @@ var Slider = React.createClass({
     };
   },
 
-  reset(values) {
-    this.setState({
-      valueOne: values[0],
-      valueTwo: values[1]
-    });
-  },
-
   componentWillMount() {
     var customPanResponder = function (start,move,end) {
       return PanResponder.create({
