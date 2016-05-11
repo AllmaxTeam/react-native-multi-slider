@@ -236,7 +236,6 @@ var Slider = React.createClass({
               {...this._panResponderOne.panHandlers}
             >
               <Marker
-                value={this.state.valueOne}
                 pressed={this.state.onePressed}
                 markerStyle={this.props.markerStyle}
                 pressedMarkerStyle={this.props.pressedMarkerStyle}
@@ -252,7 +251,6 @@ var Slider = React.createClass({
                   {...this._panResponderTwo.panHandlers}
                 >
                   <Marker
-                    value={this.state.valueTwo}
                     pressed={this.state.twoPressed}
                     markerStyle={this.props.markerStyle}
                     pressedMarkerStyle={this.props.pressedMarkerStyle}
@@ -272,10 +270,10 @@ module.exports = Slider;
 
 var styles = StyleSheet.create({
   container: {
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   fullTrack: {
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   track: {
     justifyContent: 'center'
